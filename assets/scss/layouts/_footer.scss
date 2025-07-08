@@ -3,7 +3,7 @@
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
+  color: white;
   background-color: var(--background-color);
   font-size: 14px;
   padding: 40px 0 0 0;
@@ -34,9 +34,9 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+      border: 1px solid rgba(255, 255, 255, 0.5);
       font-size: 16px;
-      color: color-mix(in srgb, var(--default-color), transparent 50%);
+      color: rgba(255, 255, 255, 0.5);
       margin-right: 10px;
       transition: 0.3s;
 
@@ -49,7 +49,7 @@
 
   .copyright {
     padding: 25px 0;
-    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 
     p {
       margin-bottom: 0;
@@ -59,5 +59,26 @@
   .credits {
     margin-top: 5px;
     font-size: 13px;
+  }
+
+  a,
+  .nav-link {
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+  a:hover,
+  .nav-link:hover {
+    color: #ddd;
+    text-decoration: underline;
+  }
+
+  .social-links a {
+    color: white;
+  }
+
+  .social-links a:hover {
+    color: #ddd;
+    border-color: #ddd;
   }
 }

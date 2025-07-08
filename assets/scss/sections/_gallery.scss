@@ -3,55 +3,45 @@
 # Gallery Section
 --------------------------------------------------------------*/
 .gallery {
-  .gallery-item {
+  overflow: hidden;
+
+  .swiper-wrapper {
+    height: auto;
+  }
+
+  .swiper-pagination {
+    margin-top: 20px;
     position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    background-color: var(--surface-color);
 
-    img {
-      transition: transform 0.3s ease;
-      width: 100%;
-      height: auto;
-      display: block;
+    .swiper-pagination-bullet {
+      background-color: var(--background-color);
+      border: 1px solid var(--accent-color);
+      width: 12px;
+      height: 12px;
+      opacity: 1;
     }
 
-    &:hover {
-      img {
-        transform: scale(1.05);
-      }
+    .swiper-pagination-bullet-active {
+      background-color: var(--accent-color);
     }
   }
 
-  .gallery-links {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    height: 100%;
-
-    a {
-      color: var(--contrast-color);
-      font-size: 24px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      line-height: 1;
-      transition: color 0.3s ease;
-      width: 100%;
-      height: 100%;
-
-      &:hover {
-        color: var(--accent-color);
-      }
-    }
+  .swiper-slide-active {
+    text-align: center;
   }
 
-  .gallery-item:hover .gallery-links {
-    opacity: 1;
+  @media (min-width: 992px) {
+    .swiper-wrapper {
+      padding: 40px 0;
+    }
+
+    .swiper-slide-active {
+      background: var(--background-color);
+      border: 6px solid var(--accent-color);
+      padding: 4px;
+      z-index: 1;
+      transform: scale(1.2);
+      transition: none;
+    }
   }
 }

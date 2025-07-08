@@ -1,0 +1,206 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Contact 3 Section
+--------------------------------------------------------------*/
+.contact-3 {
+  padding-top: 60px;
+  padding-bottom: 2px;
+
+  .section-category {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .content {
+    h2 {
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--heading-color);
+    }
+
+    .lead {
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+      font-size: 1.13rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .contact-info {
+    .info-item {
+      font-size: 1.08rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1.1rem;
+
+      i {
+        color: var(--accent-color);
+        font-size: 1.4rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      a {
+        color: var(--accent-color);
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+          color: #217dbb;
+        }
+      }
+
+      strong {
+        color: var(--heading-color);
+        font-weight: 600;
+      }
+    }
+  }
+
+  .social-contact {
+    margin-top: 2rem;
+
+    h5 {
+      font-weight: 600;
+      color: var(--heading-color);
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 0.7rem;
+
+      .social-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #f5f7fa;
+        color: var(--accent-color);
+        font-size: 1.35rem;
+        transition: background 0.2s, color 0.2s, transform 0.15s;
+
+        &:hover {
+          background: var(--accent-color);
+          color: var(--contrast-color);
+          transform: translateY(-2px) scale(1.08);
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    background-color: var(--surface-color);
+    border: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+
+    .form-header {
+      margin-bottom: 1.5rem;
+
+      h3 {
+        font-weight: 700;
+        color: var(--heading-color);
+      }
+
+      p {
+        color: color-mix(in srgb, var(--default-color), transparent 25%);
+        font-size: 1rem;
+      }
+    }
+
+    .form-label {
+      font-weight: 500;
+      color: var(--heading-color);
+      margin-bottom: 0.3rem;
+    }
+
+    .form-control,
+    .form-select {
+      padding: 0.75rem 1.25rem;
+      border: 1.5px solid #e5e5e5;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: #fafbfc;
+      color: var(--default-color);
+      margin-bottom: 1.1rem;
+
+      &:focus {
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 0.18rem color-mix(in srgb, var(--accent-color), transparent 90%);
+        outline: none;
+      }
+
+      &::placeholder {
+        color: color-mix(in srgb, var(--default-color), transparent 50%);
+      }
+    }
+
+    .btn-submit {
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 0.75rem 2rem;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      font-size: 1.08rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(52, 152, 219, 0.08);
+
+      i {
+        margin-left: 0.5rem;
+        font-size: 1.1em;
+      }
+
+      &:hover {
+        background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+        transform: translateY(-1px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+
+    .loading,
+    .error-message,
+    .sent-message {
+      display: none;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .loading {
+      color: var(--accent-color);
+    }
+
+    .error-message {
+      color: #e74c3c;
+    }
+
+    .sent-message {
+      color: #27ae60;
+    }
+  }
+
+  @media (max-width: 991px) {
+
+    .content,
+    .contact-form {
+      padding: 1.5rem 1rem;
+    }
+
+    .social-contact {
+      margin-top: 1.2rem;
+    }
+  }
+}
