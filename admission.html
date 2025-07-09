@@ -97,116 +97,95 @@
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Contact 2 Section -->
-    <section id="contact-2" class="contact-2 section">
+    <!-- Contact 3 Section -->
+    <section id="contact-3" class="contact-3 section">
 
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-5">
-            <div class="contact-info-section">
-              <div class="info-header">
-                <h3>Connect With Us</h3>
 
-              </div>
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box">
+              <h3>Contact Info</h3>
+              <p><b>100% Online | Accessible Anytime, Anywhere</b></p>
 
-              <div class="contact-info-grid">
-                <div class="info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-geo-alt-fill"></i>
-                  </div>
-                  <div class="info-content">
-                    <h5>Visit Our Office</h5>
-                    <p>PCMC, Pune-411044</p>
-                  </div>
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
                 </div>
+                <div class="content">
+                  <h4>Our Location</h4>
+                  <p><b>A 100% Online Institute with Global Access</b></p>
 
-                <div class="info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-envelope-fill"></i>
-                  </div>
-                  <div class="info-content">
-                    <h5>Send Email</h5>
-                    <p>info@iicp.in</p>
-                  </div>
-                </div>
-
-                <div class="info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-telephone-fill"></i>
-                  </div>
-                  <div class="info-content">
-                    <h5>Call Direct</h5>
-                    <p>+91-88888-0143-7</p>
-                  </div>
-                </div>
-
-                <div class="info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-clock-fill"></i>
-                  </div>
-                  <div class="info-content">
-                    <h5>Business Hours</h5>
-                    <p>24 Hours</p>
-                  </div>
                 </div>
               </div>
 
-              <div class="social-contact">
-                <h5>Follow Our Journey</h5>
-                <div class="social-icons">
-                  <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                  <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
-                  <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p>+91-8888-801-437</p>
+
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <p>info@iicp.in</p>
+
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="contact-form-wrapper">
-              <div class="form-header">
-                <h3>Send Us Message</h3>
-                <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <h3>Get In Touch</h3>
+              <p>Fill in the form and expect a response from us within 24 hours — we're here to help!</p>
 
-             <form action="https://formsubmit.io/send/equimedia3@gmail.com" method="post" class="php-email-form">
-  <div class="mb-3">
-    <label for="contactName" class="form-label">Full Name</label>
-    <input type="text" name="name" class="form-control" id="contactName" placeholder="Enter your full name" required>
-  </div>
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row gy-4">
 
-  <div class="mb-3">
-    <label for="contactEmail" class="form-label">Email Address</label>
-    <input type="email" class="form-control" name="email" id="contactEmail" placeholder="Enter your email address" required>
-  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
 
-  <div class="mb-3">
-    <label for="contactPhone" class="form-label">Phone Number</label>
-    <input type="tel" class="form-control" name="phone" id="contactPhone" placeholder="Enter your phone number">
-  </div>
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
 
-  <div class="mb-3">
-    <label for="contactSubject" class="form-label">Subject</label>
-    <input type="text" class="form-control" name="subject" id="contactSubject" placeholder="Enter message subject" required>
-  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
 
-  <div class="mb-4">
-    <label for="contactMessage" class="form-label">Your Message</label>
-    <textarea class="form-control message-textarea" name="message" id="contactMessage" rows="5" placeholder="Enter your message" required></textarea>
-  </div>
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
 
-  <button type="submit" class="submit-btn">
-    <span>Send Message</span>
-    <i class="bi bi-arrow-right"></i>
-  </button>
-</form>
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
 
             </div>
           </div>
+
         </div>
+
       </div>
-    </section><!-- /Contact 2 Section -->
+
+    </section><!-- /Contact 3 Section -->
 
   </main>
 
@@ -220,19 +199,19 @@
           <i class="bi bi-geo-alt icon"></i>
           <div class="address">
             <h4>Location</h4>
-            <p>
-              <strong>IICP – International Institute of Career Progression</strong><br>
-              Pune, Maharashtra, India <span style="font-size:1.1em;">🇮🇳</span>
+            <p><b>
+                IICP – International Institute of Career Progression
+                A 100% Online Institute with Global Access</b>
             </p>
             <p style="font-size:0.98em; color:#3498db; margin-top:8px;">
-              <i class="bi bi-laptop"></i>
-              <span style="font-weight:500;">
-                100% Online | No Physical Campus
-              </span>
+              <i class="bi bi-laptop"></i><b>&nbsp;100% Online | Accessible Anytime, Anywhere
+              </b>
             </p>
-            <p class="footer-note">
-              All programs and services are delivered virtually for nationwide accessibility and flexibility.
-            </p>
+            <div><b><br></b></div>
+            <p></p>
+            <p class="footer-note"><b>
+                All Programs &amp; Services are Delivered Virtually to ensure Nationwide accessibility, Global reach, and maximum flexibility.
+              </b></p>
           </div>
         </div>
 
@@ -242,9 +221,9 @@
           <div>
             <h4>Contact</h4>
             <p>
-              <strong>Phone/WhatsApp:</strong> <span>+91 92841 57202</span><br>
-              <strong>Email:</strong> <span>info@iicp.in</span><br>
-              <strong>Website:</strong> <a href="https://www.iicp.in" target="_blank" style="color:#3498db;">www.iicp.in</a>
+              <b>Phone/WhatsApp: <span class="">+91 92841 57202</span><br></b>
+              <strong>Email:</strong> <span class="">info@iicp.in</span><br>
+              <strong>Website:</strong> <a href="https://www.iicp.in" target="_blank" style="color:#3498db;"><b>www.iicp.in</b></a>
             </p>
           </div>
         </div>
@@ -255,8 +234,8 @@
           <div>
             <h4>Opening Hours</h4>
             <p>
-              <strong>Mon–Sat:</strong> <span>11:00 AM – 11:00 PM</span><br>
-              <strong>Sunday:</strong> <span>Closed</span>
+              <strong>Mon–Sat:</strong> <span><b>11:00 AM – 11:00 PM</b></span><br>
+              <b>Sunday: <span>Closed</span></b>
             </p>
           </div>
         </div>
@@ -289,7 +268,7 @@
 
     <!-- Copyright -->
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">IICP Business School</strong> <span>All Rights Reserved</span></p>
+      <p><b>© <span>Copyright</span> <span class="px-1 sitename">IICP </span>&nbsp;<span>All Rights Reserved</span></b></p>
     </div>
 
   </footer>
